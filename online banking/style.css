@@ -1,0 +1,265 @@
+/*  */
+body{
+    border: 0;
+    padding: 0;
+   height: 100vh;
+    background-color: rgb(245, 243, 239);
+    width: 100%;
+}
+.center-div{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 80px;
+    background-color: rgb(229, 226, 245);
+    color: white;
+    /* padding-top: 4px; */
+}
+
+.register-portal, .portal, .deposit-div,.withdraw-div,.transfer-div,.center-div,#time,#profile{
+    display: none;
+}
+.input-field{
+    border: 2px solid rgb(22, 5, 5);
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+button{
+    font-size: 16px;
+    padding: 5px;
+    border: 3px solid wheat;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+  
+}
+.options{
+display: flex;
+justify-content: space-between;
+ width: 100%;
+ position: relative;
+}
+.options button{
+position: relative;
+}
+
+.deposits-btn{
+    background-color: greenyellow;
+}
+.withdrawals-btn{
+    background-color:red
+}
+.transfers-btn{
+    background-color: yellow;
+}
+
+.errMsg{color: red;}
+.switchToLogIn, .switchToReg {
+    cursor: pointer;
+
+}
+span{
+    color: blue;
+}
+.options{
+    
+    display: flex;
+    gap: 5px;
+}
+
+.withdrawals-btn, .deposits-btn{
+margin-right: 4px;
+}
+
+#login{
+   
+    cursor: pointer;
+}
+
+ li{
+  
+    display: inline;
+    font-size: 16px;
+    margin-left: 10px;
+    color: white;  
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 15px;
+    align-items:  center;
+    justify-content: space-around; */
+}
+.navigation{
+    top: 0;
+    height: 50px;
+    background-color: navy;
+    width: auto;
+  overflow: auto;
+
+}
+.rights,#time{
+    float: right;
+}
+#time{
+
+    font-size: 30px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+
+#para1{
+    color: brown;
+    line-height: 30px;
+text-align: justify;
+font-family: 'Times New Roman';
+}
+
+.home{
+ background-color: pink;
+ height: 100vh;
+}
+table{
+  
+    margin: 20px;
+    width: 90%;
+    border: 1px solid blue;
+}
+th{
+    text-align: center;
+}
+td{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.bi-bank{
+    font-size: 40px;
+    color: gold;
+}
+.bank-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-div form{
+    display: flex;
+    flex-direction: column;
+}
+/* for modal */
+.hidden{
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 1rem;
+    border-radius: 2px;
+   
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3rem 5rem rgba(red, green, blue, alpha);
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.lab-inp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* margin-bottom: 10px; */
+    /* gap: 10px; */
+}
+.lab-inp span{
+    color: red;
+}
+.lab-inp p{
+    padding: 0;
+}
+.mod-inp{
+    /* margin-right: 140px;  */
+    height: 35px;
+    outline: none;
+    border: 2px solid black;
+}
+.next{
+    align-self: center; 
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: black;
+}
+.log{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+hr{
+    color: blue;
+}
+
+
+.close-modal{
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* modal end */
+
+ /* next modal btn  */
+.success-acount{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid white;
+ box-shadow: 1px 1px 4px 2px black;
+ width: 40%;
+ height: 60%;
+}
+.success-acount button{
+    position: absolute;
+    top: 220px;
+    right: 150px;
+}
+ /* next modal btn  end  */
+
+/* for lang  */
+.container-lang{
+    display: none;
+}
+/* lang end */
+/* 2003-2012
+2012-216
+2016-2021 */

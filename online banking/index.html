@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Implementation</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header class="navigation">
+      <ul class="li">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li class="rightss" id="login">Log In</li>
+        <!-- for modal -->
+        <button class="btn-modal" style="margin-bottom: 10px">Sign Up</button>
+        <!-- modal end -->
+        <!-- for lang -->
+        <button class="transBtn" style="margin-bottom: 10px">English</button>
+        <!-- lang end -->
+        <li class="rights" id="profile"><i class="bi bi-person"></i>Profile</li>
+      </ul>
+    </header>
+
+    <!-- for lang -->
+    <div class="container-lang">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea class="from-text" placeholder="Enter Text"></textarea>
+          <textarea
+            class="from-to"
+            placeholder="Translations "
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="bi bi-volume-up"></i>
+              <i id="from" class="bi bi-back"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange">
+            <i class="bi bi-arrow-left-right"></i>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="bi bi-volume-up"></i>
+              <i id="to" class="bi bi-back"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button>Translate Text</button>
+    </div>
+    <!-- lang end -->
+
+    <!-- for modal -->
+    <div class="modal hidden">
+      <div class="log">
+        <h3>SignUp Form</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <hr />
+
+      <h2 style="font-size: 15px; color: black">
+        Open your bank account in just five minutes
+      </h2>
+      <form class="modal-form">
+        <div class="lab-inp">
+          <p>First Name <span>*</span></p>
+          <input class="mod-inp" type="text" />
+        </div>
+        <div class="lab-inp">
+          <p>Last Name <span>*</span></p>
+          <input class="mod-inp" type="text" />
+        </div>
+        <div class="lab-inp">
+          <p>Email Address <span>*</span></p>
+          <input class="mod-inp" type="text" />
+        </div>
+        <button class="next" style="color: white">next step</button>
+      </form>
+    </div>
+    <!-- modal end -->
+    <!-- next modal btn -->
+    <div class="success-acount">
+      <h3>Account created successfully</h3>
+      <hr />
+      <p>Your Account Number is: <span>0000</span></p>
+      <button class="close-new-acc">close</button>
+    </div>
+    <!--  next modal btn  end -->
+
+    <div class="home">
+      <h1 class="glyphicon glyphicon-home" style="color: blue">
+        <span>Home</span>
+      </h1>
+      <div class="preview-row">
+        <a
+          class="hover-like-lightbox mockup-shadow"
+          href="/html-templates/preview/crypto-consultant-300630?device=desktop"
+          rel="nofollow"
+          target="_blank"
+        >
+          <picture>
+            <source
+              srcset="
+                https://images01.nicepagecdn.com/page/30/06/html-template-spreview-300630.webp
+              "
+              type="image/webp"
+              media="(max-width: 450px)"
+            />
+            <source
+              srcset="
+                https://images01.nicepagecdn.com/page/30/06/html-template-spreview-300630.jpg
+              "
+              type="image/jpeg"
+              media="(max-width: 450px)"
+            />
+            <source
+              srcset="
+                https://images01.nicepagecdn.com/page/30/06/html-template-preview-300630.webp
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                https://images01.nicepagecdn.com/page/30/06/html-template-preview-300630.jpg
+              "
+              type="image/jpeg"
+            />
+            <img
+              alt="Crypto consultant HTML Template"
+              class="media-image img-responsive noversion"
+              height="676"
+              src="https://images01.nicepagecdn.com/page/30/06/html-template-preview-3006301.jpg"
+              style=""
+              width="750"
+            />
+          </picture>
+        </a>
+      </div>
+      <!-- 
+      <p id="para1">
+        Our online banking services provide easy and flexible bank transactions
+        access. customers can make varios teansactions using smart phones or PC
+        while being at home or at work.
+      </p>
+      <table border="1">
+        <th colspan="3">Customers</th>
+        <tr>
+          <td>2000-2005</td>
+          <td>1400</td>
+          <td>in 5 Years</td>
+        </tr>
+        <tr>
+          <td>2005-2007</td>
+          <td>25000</td>
+          <td>In 2 Years</td>
+        </tr>
+      </table> -->
+    </div>
+    <div class="center-div">
+      <div class="bank-logo">
+        <i class="bi bi-bank"> Banki Teka</i>
+        <!-- <p class="abc">Banki Teka</p> -->
+        <time id="time">Time</time>
+      </div>
+
+      <h3 class="errMsg"></h3>
+      <div class="login-portal">
+        <h4>Log In</h4>
+        <label for="">Account No:</label><br />
+        <input type="text" class="input-field" id="accno" required /><br />
+        <label for="">Pin:</label><br />
+        <input type="text" class="input-field" id="accpin" required /><br />
+        <span class="loginErr"></span>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button class="login-btn">Log In</button><br />
+        <label for="" class="switchToReg"
+          >Don't Have Account&nbsp; &nbsp; &nbsp; <span>Register</span></label
+        >
+      </div>
+
+      <div class="register-portal">
+        <h4>Register</h4>
+        <label for="">Name</label><br />
+        <input type="text" class="input-field" id="username" required /><br />
+        <label for="">Account No</label><br />
+        <input type="text" class="input-field" id="regaccno" required /><br />
+        <label for="">Pin</label><br />
+        <input type="text" class="input-field" id="regaccpin" required /><br />
+        <label for="">Confirm pin</label><br />
+        <input type="text" class="input-field" id="con-accpin" required /><br />
+        <span class="regErr"></span>
+        <button class="register-btn">Register</button><br />
+        <label for="" class="switchToLogIn">
+          Have Account &nbsp; <span>Log In</span>
+        </label>
+      </div>
+
+      <div class="portal">
+        <!-- <time id="time">Time</time>    -->
+
+        <h4 class="username">...</h4>
+        <p>Available Balance: <span class="avail-balance"></span></p>
+        <!-- <label for="">Available Balance: <span  class="avail-balance"></span></label> -->
+        <div class="deposit-div">
+          <h4>Deposit</h4>
+          <label for="">deposit Amount</label><br />
+          <input
+            type="text"
+            class="input-field"
+            required
+            id="deposit-amnt"
+          /><br />
+          <button class="submit-deposit">Depose</button>
+        </div>
+        <div class="withdraw-div">
+          <h4>Withdraw</h4>
+          <label for="">Withdrawal Amount</label><br />
+          <input type="" class="input-field" required id="withd-amnt" /><br />
+          <button class="submit-withdrawal">Withdraw</button>
+        </div>
+        <div class="transfer-div">
+          <h4>Transfer</h4>
+          <label for="">Transfer Amount</label><br />
+          <input
+            type="curr-transfer"
+            class="input-field"
+            required
+            id="trans-amnt"
+          /><br />
+          <label for="">Enter Transfer Account</label><br />
+          <input
+            type="text"
+            class="input-field"
+            required
+            id="trans-acc"
+          /><br />
+          <button class="submit-transfer">Transfer</button>
+        </div>
+        <h4>Please select an Option</h4>
+        <div class="options">
+          <button class="deposits-btn">Deposits</button>
+          <button class="withdrawals-btn">Withdrawals</button>
+          <button class="transfers-btn">Transfers</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
